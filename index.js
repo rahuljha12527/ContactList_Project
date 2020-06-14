@@ -90,7 +90,7 @@ app.post('/create-contact',function(req,res){
 
 app.get('/delete-contact',function(req,res){
     //  console.log(req.query); 
-    let id=req.query.id;;
+    let id=req.query.id;
 
     Contact.findByIdAndDelete(id,function(err){
       
